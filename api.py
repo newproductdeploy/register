@@ -15,7 +15,7 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
-@app.route('https://shopnestregister.vercel.app/',methods = ['POST','GET'])
+@app.route('https://shopnestregister.vercel.app//',methods = ['POST','GET'])
 def input():
 	return render_template("register.html")
 @app.route('https://shopnestregister.vercel.app/register',methods = ['POST','GET'])
